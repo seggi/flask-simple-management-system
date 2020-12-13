@@ -1,0 +1,88 @@
+<div id="add-pop-remove-worker" class="box-pop-modal">
+    <div id="modal" style="height:auto; overflow: auto;">
+        <span class="close" onclick="closeRemoveWorkerPop()">×</span>
+        <form id="removeworker-form" method="POST" autocomplete="off">
+            <div class="addproduct-box">
+                <label>Remove this Worker ?</label>
+                <input type="hidden" name="remove_worker" id="remove_worker">
+            </div>
+        </form>
+        <button type="submit" id="btn-removeworker">Yes</button>
+    </div>
+</div>
+
+
+
+<div class="purchaseitem-box" id="purchaseitem-box" style="display: none;">
+    <div class="item-box">
+        <div class="top-items-content">
+           <div class="top-items-content-left">
+                <h3>Sell Items</h3>
+                <div class="sell-items-search">
+                    <!-- <form id="getproductfound-form" method="POST"> -->
+                        <div class="forms-items-box">
+                            <span>Search</span>
+                            <div>
+                                <form id="getproductfound-form" method="POST" autocomplete="off">
+                                    <input type="search" id= "search" placeholder="Seach..." autocomplete="off">
+                                    <input type="hidden" name="hidden-search-id" id="hidden-search-id">
+                                </form>
+                                <button  id="btn-getproductfound">Show</button>
+                            </div>
+                        </div>
+                         <!-- Search System -->
+                        <!-- <div class="modal-livesearch" id="m-livesearch">
+                            <div class="live-search" id="results" ></div>
+                        </div> -->
+                        <div class="live-search" id="results" ></div>
+                    <!-- </form> -->
+                </div>
+           </div>
+           <div class="top-items-content-right">
+                <form method="POST" id="sell-product-form-item" onsubmit="return defaultPrevented(event);" autocomplete="off">
+                    <div class="purchase-side">
+                        <div class="forms-items-box" style="width: 200px;">
+                            <span>Quantity</span>
+                            <input type="number" name="sold-quantity" placeholder="Quantity">
+                        </div>
+    
+                        <div class="forms-items-box">
+                            <span>Client name</span>
+                            <input type="text" name="client-name" placeholder="Enter client name">
+                        </div>
+                    </div>
+                    <input type="hidden" name="product-to-sell_id" id="product-to-sell_id">
+                    <input type="hidden" name="currency_type" id="currency_type">
+                    <input type="hidden" name="productvalue" id="productvalue">
+                    <div class="forms-items-box">
+                        <button type="submit" id="btn-sell-product-formitem" style="background-color: green;">Save</button>
+                    </div>
+                </form>
+                
+           </div>
+        </div>
+        <div class="bottom-items-content">
+            <div class="forms-items-box">
+                <span>Product Name</span>
+                <input type="text" name="fproduct_name" id="fproduct_name" placeholder="Product name" readonly>
+            </div>
+            <div class="forms-items-box">
+                <span>Description</span>
+                <input type="text" name="fdescription" id="fdescription" placeholder="Description" readonly>
+            </div>
+            <div class="forms-items-box">
+                <span>Unit price</span>
+                <input type="text"  name="funit_price" id="funit_price" placeholder="Unit price" readonly>
+            </div>
+            <div class="forms-items-box">
+                <span>Stock</span>
+                <input type="text" name="fstock" id="fstock" placeholder="Stock" readonly>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-content" id="display-purchaseitem1" style="border-top: 1px solid #888888">
+    
+    </div>
+</div>
+

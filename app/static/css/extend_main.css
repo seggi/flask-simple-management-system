@@ -1,0 +1,346 @@
+.top-items-content {
+    height: 100px;
+    display: inline-flex;
+    padding: 4px;
+    border-bottom: 1px solid #868686;
+    width: 100%;
+
+}
+
+.top-items-content {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.top-items-content-left {
+    width: 30%;
+    display: block;
+    float: left;
+}
+
+.top-items-content-left h3{
+    color: #868686;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.forms-items-box {
+    display: block;
+}
+
+.forms-items-box span {
+    width: 100%;
+    padding: 4px;
+    text-align: left;
+    margin-left: 8px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.forms-items-box  input[type="text"]{
+    width: 100%;
+    padding: 8px;
+    padding-left: 8px;
+    font-size: 15px;
+    border-radius: 4px;
+    border: 1px solid #868686;
+    box-sizing: border-box;
+    
+}
+
+.forms-items-box  input[type="number"]{
+    width: 100%;
+    padding: 8px;
+    padding-left: 8px;
+    font-size: 15px;
+    border-radius: 4px;
+    border: 1px solid #868686;
+    box-sizing: border-box;
+    
+}
+
+.forms-items-box div {
+    width: 100%;
+    display: inline-flex;
+    background-color: blue;
+}
+
+
+.forms-items-box div input[type='search'] {
+    width: 100%;
+    padding: 8px;
+    padding-left: 8px;
+    font-size: 15px;
+    border: 1px solid #868686;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.forms-items-box div button{
+    color: #fff;
+    font-weight: bold;
+    width: 20%;
+    border: 1px solid dodgerblue;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: dodgerblue;
+    text-align: center;
+    padding: 8px;
+    margin-top: 0px;
+}
+
+.forms-items-box button {
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    padding: 8px;  
+    font-size: 15px;
+    border-radius: 4px;
+    margin-top: 5px;
+    border: 1px solid #868686;
+    background-color: dodgerblue;
+}
+
+.forms-items-box button {
+    cursor: pointer;
+}
+
+/* Form submit button submit outside============================ */
+/* ============================================================= */
+
+.forms-items-box form span {
+    width: 100%;
+    padding: 4px;
+    text-align: left;
+    margin-left: 8px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.forms-items-box form input[type="text"]{
+    width: 100%;
+    padding: 8px;
+    padding-left: 8px;
+    font-size: 15px;
+    border-radius: 4px;
+    border: 1px solid #868686;
+    box-sizing: border-box;
+    
+}
+
+.forms-items-box form input[type="number"]{
+    width: 100%;
+    padding: 8px;
+    padding-left: 8px;
+    font-size: 15px;
+    border-radius: 4px;
+    border: 1px solid #868686;
+    box-sizing: border-box;
+    
+}
+
+.forms-items-box div form {
+    width: 100%;
+    display: inline-flex;
+    background-color: blue;
+}
+
+
+.forms-items-box div form input[type='search'] {
+    width: 100%;
+    padding: 8px;
+    padding-left: 8px;
+    font-size: 15px;
+    border: 1px solid #868686;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.forms-items-box  input[type='search'] {
+    width: 100%;
+    padding: 8px;
+    padding-left: 8px;
+    font-size: 15px;
+    border: 1px solid #868686;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.forms-items-box div form button{
+    color: #fff;
+    font-weight: bold;
+    width: 20%;
+    border: 1px solid dodgerblue;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: dodgerblue;
+    text-align: center;
+    padding: 8px;
+    margin-top: 0px;
+}
+
+.forms-items-box form button {
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    padding: 8px;  
+    font-size: 15px;
+    border-radius: 4px;
+    margin-top: 5px;
+    border: 1px solid #868686;
+    background-color: dodgerblue;
+}
+
+.forms-items-box form button:hover {
+    cursor: pointer;
+}
+
+
+
+/* -------------------------------------------- */
+
+.forms-items-box form {
+    width: 100%;
+}
+
+.sell-items-search {
+    margin-top: 0px;
+    padding-bottom: 8px;
+}
+
+.description-item {
+    margin-top: 0px;
+    padding-bottom: 8px;
+    width: 50%;
+}
+.top-items-content-left form {
+    display: inline-flex;
+    width: 100%;
+
+}
+
+.top-items-content-left form {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.top-items-content-left form .sell-items-search {
+    float: left;
+    width: 50%;
+}
+
+
+.top-items-content-left form .description-item {
+    float: right;
+    
+}
+
+.top-items-content-left form .sell-items-search .forms-items-box{
+    float: left;
+    width: 80%;
+}
+
+.top-items-content-left form .description-item .forms-items-box{
+    width: 80%;
+    float: left;
+    
+}
+
+
+.top-items-content-right {
+    width: 70%;
+    display: flex;
+    float: right;
+}
+
+.top-items-content-right form {
+    width: 50%;
+    margin: 10px auto;
+    margin-right: 12px;
+    margin-bottom: 2px;
+}
+
+.bottom-items-content {
+    display: flex;
+    padding: 5px;
+}
+
+.bottom-items-content .forms-items-box {
+    margin: 5px;
+    margin-left: 0;
+    width: 230px;
+}
+
+.purchase-side {
+    display: flex;
+}
+
+.purchase-side .forms-items-box {
+    margin: 2px;
+}
+
+
+/* Payment session */
+
+.payment-box {
+    background-color: white;
+    width: 100%;
+}
+
+/* Top session repport */
+
+
+.top-session-repport {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    box-sizing: border-box;
+    background: white;
+}
+
+/* .top-session-repport {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+.top-session-items {
+    width: 30%;
+    margin: 5px;
+    display: block;
+    background: green;
+    text-align: center;
+    border-radius: 4px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.top-session-items .title-content {
+    color: black;
+    margin-top: 0px;
+    font-size: 15px;
+    width: 100%;
+}
+
+.title-content h3 {
+    font-weight: 500;
+}
+
+.top-session-items .value-content {
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+
+.value-content h3{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: -10px;
+    color: white;
+    font-family: "Roboto" sans-serif;
+}
+
+

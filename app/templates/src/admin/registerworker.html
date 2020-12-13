@@ -1,0 +1,81 @@
+<!-- Record worker -->
+<div id="add-pop-record-worker" class="box-pop-modal">
+    <div id="modal" style="height:auto; overflow: auto;">
+        <span class="close" onclick="closeRecordWorkerPop()">×</span>
+        <form id="recordworker-form" method="POST" autocomplete="off">
+            <div class="addproduct-box">
+                <label>Record Worker</label>
+                <input type="text" name="worker_name" id="worker_name" placeholder="Worker name" autofocus>
+                <input type="text" name="worker_lastname" id="worker_lastname" placeholder="lastname" autofocus>
+                <input type="number" name="age" id="age" placeholder="Age" autofocus>
+                <select name="sex" aria-required="true">
+                    <option value="" selected disabled>Gender</option>
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                </select>
+                <input type="number" name="salary" id="salary" placeholder="Salary" autofocus>
+                <select name="currency_id">
+                    <option value="" selected disabled>Salary currency</option>
+                    {% for currencies in context.currency %}
+                        <option value="{{ currencies.id }}">{{ currencies.currency_type }}</option>
+                    {% endfor %}
+                </select>
+                <input type="text" name="contact" id="contact" placeholder="Contacts" autofocus>
+                <input type="text" name="address" id="address" placeholder="Address" autofocus>
+                <input type="hidden" name="record_worker" id="record_worker">
+            </div>
+        </form>
+        <button type="submit" id="btn-recordworker">Save</button>
+    </div>
+</div>
+
+
+<!-- Update Worker content  -->
+
+<div id="add-pop-update-worker" class="box-pop-modal">
+    <div id="modal" style="height:auto; overflow: auto;">
+        <span class="close" onclick="closeUpdateWorkerPop()">×</span>
+        <form id="updateworkers-form"  autocomplete="off">
+            <div class="addproduct-box">
+                <label>Update Worker</label>
+                <input type="text" name="worker_name_edt" id="worker_name_edt" placeholder="Worker name" autofocus>
+                <input type="text" name="worker_lastname_edt" id="worker_lastname_edt" placeholder="lastname" autofocus>
+                <!-- <input type="number" name="age_edt" id="age_edt" placeholder="Age" autofocus> -->
+                <select name="sex_edt"  id="sex_edt" aria-required="true">
+                    <option value="" selected disabled>Gender</option>
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                </select>
+                <input type="number" name="salary_edt" id="salary_edt" placeholder="Salary" autofocus>
+                <input type="text" id="currency_id_edt" autofocus readonly>
+                <select name="currency_id_edt1">
+                    <option value="" selected disabled>Salary currency</option>
+                    {% for currencies in context.currency %}
+                        <option value="{{ currencies.id }}">{{ currencies.currency_type }}</option>
+                    {% endfor %}
+                </select>
+                
+                <input type="text" name="contact_edt" id="contact_edt" placeholder="Contacts" autofocus>
+                <input type="text" name="address_edt" id="address_edt" placeholder="Address" autofocus>
+                <input type="hidden" name="record_worker_updated" id="record_worker_updated">
+            </div>
+        </form>
+        <button type="submit" id="btn-updateworkers">Save</button>
+    </div>
+</div>
+
+<!-- Delete Workerman from db -->
+
+<div id="add-pop-remove-worker" class="box-pop-modal">
+    <div id="modal" style="height:auto; overflow: auto;">
+        <span class="close" onclick="closeRemoveWorkerPop()">×</span>
+        <form id="removeworker-form" method="POST" autocomplete="off">
+            <div class="addproduct-box">
+                <label>Remove this Worker ?</label>
+                <input type="hidden" name="remove_worker" id="remove_worker">
+            </div>
+        </form>
+        <button type="submit" id="btn-removeworker">Yes</button>
+    </div>
+</div>
+

@@ -1,0 +1,137 @@
+.login-box-content {
+    /* height: 100%;
+    width: 100%; */
+    width: 60%;
+    margin: 10px auto;
+    display: flex;
+    background-color: inherit;
+
+}
+
+.left-box {
+    height: 480px;
+    width: 65%;
+    box-sizing: border-box;
+    background: white;
+    /* align-content: center; */
+    /* text-align: center; */
+    display: block;
+}
+
+.top-bar {
+    height: 60px;
+    width: 100%;
+    padding-top: 1px;
+    background-color: black;
+    align-items: center;
+}
+
+.top-bar h1{
+    padding: 2px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.left-box .bottom-items {
+    height: 425px;
+    width: 100%;
+    padding-top: 10px;
+    display: block;
+    text-align: center;
+}
+
+.forms-items {
+    width: 90%;
+    padding: 2px;
+    text-align: center;
+    margin: 10px auto;
+    display: block;
+}
+
+.forms-items label {
+    width: 100%; 
+    left: 0;
+    float: left;
+    font-weight: 400;
+    font-size: 20px;
+    box-sizing: border-box;
+    text-align: start;
+    margin-top: 10px;
+}
+
+.forms-items input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 18px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.forms-items input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 18px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.forms-items input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 18px;
+    float: left;
+}
+
+.bottom-items input[type="submit"]{
+    font-size: 18px;
+    border-radius: 4px;
+    font-weight: bold;
+    width: 300px;
+    background-color: dodgerblue;
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    color: white;
+    border-style: none;
+    margin-top: 20px;
+    
+}
+
+.bottom-items input[type="submit"]:hover {
+    border: none;
+}
+
+.bottom-items input[type="submit"]:focus {
+    border-color: 1px solid dodgerblue;
+}
+
+.right-box {
+    width: 35%;
+    height: 485px;
+    background-image: url("./images/welcome.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contacte-box {
+    margin-top: 400px;
+    display: inline-block;
+}
+
+.contacte-box h1{
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+    float: right;
+    margin-right: 10px;
+}
+
+.signup-content {
+    overflow: auto;
+}

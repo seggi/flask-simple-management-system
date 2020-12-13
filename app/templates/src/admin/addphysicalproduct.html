@@ -1,0 +1,52 @@
+<!-- Add product screen -->
+<div id="add-pop-physical-product" class="box-pop-modal">
+    <div id="modal" style="height:auto; overflow: auto;">
+        <span class="close" onclick="closeAddPhysicalProductPop()">×</span>
+        <form id="addphysicalproduct-form" method="POST" autocomplete="off">
+            <div class="addproduct-box">
+                <label>Record Product</label>
+                <input type="text" name="product_name" id="product_name" placeholder="Product name" autofocus>
+                <input type="text" name="product_designation" id="product_designation" placeholder="Designation" autofocus>
+                <input type="number" name="unit_price" id="unit_price" placeholder="Unit price" autofocus>
+                <input type="number" name="quantity" id="quantity" placeholder="Quantity" autofocus>
+                <input type="number" name="tot_price" id="tot_price" placeholder="Tot price" autofocus>
+                <select name="currency_id">
+                    <option value="" selected disabled>Monnaie</option>
+                    {% for currencies in context.currency %}
+                        <option value="{{ currencies.id }}">{{ currencies.currency_type }}</option>
+                    {% endfor %}
+                </select>
+                <input type="hidden" name="physical_product" id="physical_product" value="Physique">
+            </div>
+        </form>
+        <button type="submit" id="btn-add-physical-product">Ajouter</button>
+    </div>
+</div>
+
+<!-- Update product screen -->
+
+<div id="edit-pop-physical-product" class="box-pop-modal">
+    <div id="modal" style="height:auto; overflow: auto;">
+        <span class="close" onclick="closeEditPhysicalProductPop()">×</span>
+        <form id="editphysicalproduct-form" method="POST" autocomplete="off">
+            <div class="addproduct-box">
+                <label>Record Product</label>
+                <input type="text" name="product_name_edt" id="product_name_edt" placeholder="Product name" autofocus>
+                <input type="text" name="product_designation_edt" id="product_designation_edt" placeholder="Designation" autofocus>
+                <input type="number" name="unit_price_edt" id="unit_price_edt" placeholder="Unit price" autofocus>
+                <input type="number" name="quantity_edt" id="quantity_edt" placeholder="Quantity" autofocus>
+                <input type="number" name="tot_price_edt" id="tot_price_edt" placeholder="Tot price" autofocus>
+                <input type="text" name="id_currencies" id="product_currency_edt" readonly>
+                <br>
+                <select name="currencies_id_edt" id='currency_id_edt'>
+                    <option value="" selected disabled>Currency</option>
+                    {% for currencies in context.currency %}
+                        <option value="{{ currencies.id }}">{{ currencies.currency_type }}</option>
+                    {% endfor %}
+                </select>
+                <input type="hidden" name="edit_physical_product" id="physical_product_edt" >
+            </div>
+        </form>
+        <button type="submit" id="btn-edit-physical-product">Ajouter</button>
+    </div>
+</div>

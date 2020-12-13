@@ -1,0 +1,20 @@
+<div class="Purchase-session" id="Purchase-session">
+    <div class="provision-session-bottom">
+        <div class="f-content-left-bottom">
+            <div class="tbl-content-box">
+                <div class="title-bar-content">
+                    <div class="filter-in-tbl">
+                        <input type="search" data-table="order-table" placeholder="filter in table.." class="filter-in-table">
+                    </div>
+                    <div class="option-btns">
+                        <a>Items</a>
+                        <a onclick="openPurchasePop()">Purchase</a> 
+                        <a id="btn-get-all-sold-product">Display</a>
+                    </div>   
+                </div>
+                {% include "/src/admin/purchaseitem.html" %}
+                {% include "/src/admin/purchasetable.html" %}
+            </div>
+        </div>
+    </div>
+</div>

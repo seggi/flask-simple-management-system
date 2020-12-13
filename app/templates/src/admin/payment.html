@@ -1,0 +1,93 @@
+<div id="add-pop-other-expenses" class="box-pop-modal">
+    <div id="modal" style="height:auto; overflow: auto;">
+        <span class="close" onclick="closeRecordExpensesPop()">×</span>
+        <form id="other-expenses-form" method="POST" autocomplete="off">
+            <div class="addproduct-box">
+                <label>Record Expenses</label>
+                <div class="forms-items-box">
+                    <input type="number" name="eamount" id="eamount" placeholder="Amount" autofocus>
+                </div>
+                <div class="forms-items-box">
+                    <input type="text" name="edesignation" id="edesignation" placeholder="Designation" autofocus>
+                    <input type="hidden" name="record_otherexpenses" id="record_otherexpenses">
+                </div>
+            </div>
+        </form>
+        <button type="submit" id="btn-otherexpenses">Save</button>
+    </div>
+</div>
+
+
+<div class="payment-box" id="payment-box">
+    <div class="item-box">
+        <div class="top-items-content">
+           <div class="top-items-content-left" style=" display: flex; width: 70%; padding: 5px;">
+                <!-- <h3>Employee payment</h3> -->
+                <form id="employee-payment-form" onsubmit="return defaultPrevented(event);" autocomplete="off">
+                    <div class="sell-items-search" >
+                
+                        <div class="forms-items-box">
+                            <span>Search</span>
+                            <input type="search" id="search1" placeholder="Seach..." autocomplete="off">
+                            <input type="hidden" name="hidden-esearch-id" id="hidden-esearch-id">
+                            <input type="hidden" name="hdn-employeesalary" id="hdn-employeesalary">
+                            <input type="hidden" name="hdn-employeefullname" id="hdn-employeefullname">
+                            <input type="hidden" name="currency_type" id="currency_type_payment">
+                            <!-- <div>
+                                <form id="getemployeefound-form" method="POST" onsubmit="return defaultPrevented(event);" autocomplete="off">
+                                    <input type="search" id="search1" placeholder="Seach..." autocomplete="off">
+                                    <input type="hidden" name="hidden-esearch-id" id="hidden-esearch-id">
+                                    <input type="hidden" name="hidden-employeesalary" id="hidden-employeesalary">
+                                </form>
+                                <button  id="btn-getemployeefound">Show</button>
+                            </div> -->
+                        </div>
+                        
+                        <div class="live-search" id="results1" ></div>
+                    
+                        <div class="forms-items-box">
+                            <span>Enter Amount</span>
+                            <input type="number" name="employee-amount" placeholder="Enter Amount">
+                        </div>    
+                    </div>
+
+                    <div class="description-item">
+                        <div class="forms-items-box">
+                            <span>Designation</span>
+                            <input type="text" name="designation" placeholder="Enter designation">
+                        </div>
+                        
+                        <div class="forms-items-box">
+                            <span></span>
+                            <button type="submit" id="btn-employee-payment-form" 
+                                style="background-color: green;">Save</button>
+                        </div>
+                    </div>
+                </form>
+           </div>
+           <div class="top-items-content-right" style="width: 30%;">
+                <form method="POST" id="sell-product-form" onsubmit="return defaultPrevented(event);" autocomplete="off">
+                    
+                    <div class="forms-items-box">
+                        <button type="submit" id="btn-sell-product-form" style="background-color: goldenrod;">Print</button>
+                    </div>
+                </form>
+                
+           </div>
+        </div>
+        <div class="bottom-items-content">
+            <div class="forms-items-box" style="width: 50%;" >
+                <span>Employee Name</span>
+                <input type="text" name="femployee_name" id="femployee_name" placeholder="Employee name" readonly>
+            </div>
+            <div class="forms-items-box">
+                <span>Salary</span>
+                <input type="text" name="fsalary" id="fsalary" placeholder="Salary" readonly>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-content" id="display-expenses-tbl1" style="border-top: 1px solid #888888">
+    
+    </div>
+</div>
